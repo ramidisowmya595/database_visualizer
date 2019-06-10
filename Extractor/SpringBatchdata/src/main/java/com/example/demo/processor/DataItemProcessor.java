@@ -10,7 +10,7 @@ public class DataItemProcessor implements ItemProcessor<Data,Data> {
 
 	@Override
 	public Data process(Data item) throws Exception {
-		System.err.println(item);
+		//System.err.println(item);
 		return item;
 	}
 
