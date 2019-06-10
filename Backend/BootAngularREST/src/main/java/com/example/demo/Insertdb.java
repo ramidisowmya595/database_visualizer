@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 @Entity
 @Table(name = "insertdb" ,schema="visualdb")
 public class Insertdb {
@@ -14,6 +16,8 @@ public class Insertdb {
 				+ ", column_nm=" + column_nm + "]";
 	}
 	@Id
+	@JsonInclude
+	@Column(name = "id")
 	private long id;
 	@Column(name = "type_nm")
 	private String type_nm;
