@@ -44,7 +44,7 @@ export class DisplayComponent  {
    this.gridApi=params.api;
    this.gridColumnApi=params.columnApi;
    this.http
-   .get("http://desktop-u8jf0jp:8084/insertdb")
+   .get("http://localhost:8084/insertdb")
    .subscribe(data=>{ 
     params.api.setRowData(data['_embedded']['insertdb']);
    })
